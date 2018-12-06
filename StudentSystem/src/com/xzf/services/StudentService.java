@@ -1,0 +1,70 @@
+package com.xzf.services;
+
+import java.util.List;
+
+import com.xzf.domain.PageBean;
+import com.xzf.domain.Student;
+
+/**
+ * 这是学生业务处理规则
+ * @author user
+ *
+ */
+public interface StudentService {
+	
+	/**
+	 * 查询所有学生
+	 * @return List<Student>
+	 * @throws Exception
+	 */
+	List<Student> findAll() throws Exception;
+	
+	/**
+	 * 
+	 * @param student
+	 * @return 返回添加是否成功
+	 * @throws Exception
+	 */
+	Boolean insert(Student student) throws Exception;
+	
+	/**
+	 * 
+	 * @param sid
+	 * @return 返回删除是否成功
+	 * @throws Exception
+	 */
+	Boolean delete(String sid) throws Exception;
+	
+	/**
+	 * 
+	 * @param sid
+	 * @return 返回学生
+	 * @throws Exception
+	 */
+	Student findStudent(String sid) throws Exception;
+	
+	/**
+	 * 
+	 * @param student
+	 * @return 返回更新操作是否成功
+	 * @throws Exception
+	 */
+	Boolean update(Student student) throws Exception;
+	
+	/**
+	 * 根据条件查询
+	 * @param sname
+	 * @param gender
+	 * @return
+	 * @throws Exception
+	 */
+	List<Student> searchStu(String sname, String gender) throws Exception;
+	
+	/**
+	 * 分页查询
+	 * @param currentPage
+	 * @return
+	 * @throws Exception
+	 */
+	PageBean<Student> findStudentByPage(int currentPage) throws Exception;
+}
