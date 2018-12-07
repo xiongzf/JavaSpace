@@ -12,24 +12,24 @@ import com.xzf.services.impl.StudentServiceImpl;
 
 
 public class UpdateServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-       
-    
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String sid = request.getParameter("sid");
-		
-		StudentService service = new StudentServiceImpl();
-		try {
-			Student student = service.findStudent(sid);
-			request.setAttribute("stu", student);
-			request.getRequestDispatcher("edit.jsp").forward(request, response);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
+    private static final long serialVersionUID = 1L;
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
-	}
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String sid = request.getParameter("sid");
+
+        StudentService service = new StudentServiceImpl();
+        try {
+            Student student = service.findStudent(sid);
+            request.setAttribute("stu", student);
+            request.getRequestDispatcher("edit.jsp").forward(request, response);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doGet(request, response);
+    }
 
 }

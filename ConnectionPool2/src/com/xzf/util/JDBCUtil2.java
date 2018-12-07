@@ -1,14 +1,16 @@
 package com.xzf.util;
 
 import java.sql.*;
+
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 public class JDBCUtil2 {
-	static ComboPooledDataSource dataSource = null;
-	static {
-		dataSource = new ComboPooledDataSource();
-	}
-	
+    static ComboPooledDataSource dataSource = null;
+
+    static {
+        dataSource = new ComboPooledDataSource();
+    }
+
     public static Connection getConnection() throws Exception {
         return dataSource.getConnection();
     }

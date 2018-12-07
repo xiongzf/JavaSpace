@@ -32,11 +32,11 @@ public class JDBCUtil {
 
         try {
             //1、注册驱动
-                // 方法1
-                //    Driver driver = new Driver();
-                //    DriverManager.registerDriver(driver);
-                // 方法2
-                //    Class.forName(driverClass);
+            // 方法1
+            //    Driver driver = new Driver();
+            //    DriverManager.registerDriver(driver);
+            // 方法2
+            //    Class.forName(driverClass);
             //2、建立连接
             conn = DriverManager.getConnection(url, user,
                     pwd);

@@ -10,25 +10,25 @@ import com.xzf.services.StudentService;
 import com.xzf.services.impl.StudentServiceImpl;
 
 public class DeleteServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-       
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String sid = request.getParameter("sid");
-		StudentService service = new StudentServiceImpl();
-		
-		try {
-			boolean isSuccess = service.delete(sid);
-			
-			if (isSuccess) {
-				request.getRequestDispatcher("StudentListServlet").forward(request, response);
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
+    private static final long serialVersionUID = 1L;
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
-	}
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String sid = request.getParameter("sid");
+        StudentService service = new StudentServiceImpl();
+
+        try {
+            boolean isSuccess = service.delete(sid);
+
+            if (isSuccess) {
+                request.getRequestDispatcher("StudentListServlet").forward(request, response);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doGet(request, response);
+    }
 
 }
