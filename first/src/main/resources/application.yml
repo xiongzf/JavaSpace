@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/students?useSSL=false
+    username: root
+    password: wq11sa22
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8
+    serialization:
+      write-dates-as-timestamps: false #时间戳还是字符串
+
+#把数据库里下划线连接的字段转成驼峰命名格式,默认不转
+mybatis.configuration.mapUnderscoreToCamelCase: true
+
+logging:
+  file: target/app.log
+  level:
+    ROOT: warn
+    com.xzf: trace

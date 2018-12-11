@@ -1,0 +1,18 @@
+
+spring:
+  jackson:
+    date-format: yyyy-MM-dd  
+    time-zone: GMT+8
+    serialization:
+      write-dates-as-timestamps: false
+  kafka:
+    bootstrap-servers: localhost:9092 #kafka服务器地址
+    consumer:
+      group-id: my-group  #默认的消费者groupid; 不同的订阅者需要不同group-id，相同的group-id的订阅者只有一个收到消息
+
+logging:
+  file: target/app.log
+  level:
+    ROOT: INFO
+    cn.devmgr: TRACE
+
