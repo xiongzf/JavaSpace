@@ -1,0 +1,13 @@
+INDEX VERSION 1.131
+/Users/commafit/Desktop/JavaLearning/JavaSpace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1745059782.index
+/StudentSystem/src
+/Users/user/Desktop/JavaLearning/JavaSpace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1953329949.index
+/StudentManager/src
+/Users/user/Desktop/JavaLearning/JavaSpace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1745059782.index
+/StudentSystem/src
+/Users/commafit/Desktop/JavaLearning/JavaSpace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3258015729.index
+/JspDemo/src
+/Users/user/Desktop/JavaLearning/JavaSpace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3258015729.index
+/JspDemo/src
+/Users/commafit/Desktop/JavaLearning/JavaSpace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1953329949.index
+/StudentManager/src

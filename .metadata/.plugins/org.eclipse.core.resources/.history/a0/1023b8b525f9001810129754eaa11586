@@ -1,0 +1,7 @@
+package com.xzf.util;
+
+public class TextUtils {
+	public boolean isEmpty(CharSequence s) {
+		return s == null || s.length() == 0;
+	}
+}

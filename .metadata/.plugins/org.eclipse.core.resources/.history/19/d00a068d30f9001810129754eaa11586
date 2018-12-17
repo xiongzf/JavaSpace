@@ -1,0 +1,16 @@
+package com.xzf.domain;
+
+/**
+ * 这是一个用于封装了分页的数据.
+ * 里面包含
+ * 			该页的学生数据集合
+ * 			总的记录数
+ * 			总的页数
+ * 			当前页
+ * 			每页显示的记录数
+ * @author commafit
+ *
+ */
+public class PageBean {
+
+}

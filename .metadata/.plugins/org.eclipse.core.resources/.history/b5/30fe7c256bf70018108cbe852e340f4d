@@ -1,0 +1,18 @@
+package com.xzf.services.impl;
+
+import java.util.List;
+
+import com.xzf.dao.StudentDao;
+import com.xzf.dao.impl.StudentDaoImpl;
+import com.xzf.domain.Student;
+import com.xzf.services.StudentService;
+
+public class StudentServiceImpl implements StudentService {
+
+	@Override
+	public List<Student> findAll() throws Exception {
+		StudentDao dao = new StudentDaoImpl();
+		return dao.findAll();
+	}
+
+}

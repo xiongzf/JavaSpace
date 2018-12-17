@@ -1,0 +1,15 @@
+INDEX VERSION 1.4+/Users/commafit/Desktop/JavaLearning/JavaSpace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+85944390.index
+2269662805.index
+1440603357.index
+3928471238.index
+1230465155.index
+1953329949.index
+1745059782.index
+3258015729.index
+2254419334.index
+984561954.index
+2554615146.index
+1041634043.index
+1848458239.index
+2777510126.index

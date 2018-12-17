@@ -1,0 +1,17 @@
+package com.xzf.dao;
+
+import java.util.List;
+
+import com.xzf.domain.Student;
+
+public interface StudentDao {
+	List<Student> findAll() throws Exception;
+	
+	Student findStudent(String sid) throws Exception;
+	
+	Boolean insert(Student student) throws Exception;
+	
+	Boolean delete(String sid) throws Exception;
+	
+	
+}

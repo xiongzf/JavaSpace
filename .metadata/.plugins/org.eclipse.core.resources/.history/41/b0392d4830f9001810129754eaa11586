@@ -1,0 +1,5 @@
+package com.xzf.domain;
+
+public class PageBean {
+
+}

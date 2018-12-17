@@ -1,0 +1,27 @@
+package com.xzf.dao.impl;
+
+import java.util.List;
+
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
+
+import com.xzf.dao.StudentDao;
+import com.xzf.domain.Student;
+import com.xzf.util.JDBCUtil2;
+
+/**
+ * 
+ * @author user
+ *	这是 studentDao 的实现
+ */
+public class StudentDaoImpl implements StudentDao {
+
+	@Override
+	public List<Student> findAll() throws Exception {
+		QueryRunner qRunner = new QueryRunner(JDBCUtil2.getDataSource());
+		String sql = "select * from stu";
+		List<Student> list = qRunner.query(sql, new BeanListHandler<Student>(Student.class));
+		return list;
+	}
+ 
+}

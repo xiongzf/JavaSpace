@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.Boolean"/>
+<fullyQualifiedTypeName name="org.apache.commons.dbutils.QueryRunner"/>
+<fullyQualifiedTypeName name="com.xzf.util.JDBCUtil2"/>
+<fullyQualifiedTypeName name="com.xzf.dao.StudentDao"/>
+<fullyQualifiedTypeName name="com.xzf.dao.impl.StudentDaoImpl"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="com.xzf.domain.Student"/>
+<fullyQualifiedTypeName name="com.xzf.services.StudentService"/>
+<fullyQualifiedTypeName name="com.xzf.services.impl.StudentServiceImpl"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+</qualifiedTypeNameHistroy>
